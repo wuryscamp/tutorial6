@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  a(href='/') Home
+  div
+    form(method='post' action='/save_student')
+      p Code :
+      input(type='text' name='code')
+      p Name :
+      input(type='text' name='name')
+      p Department :
+      input(type='text' name='department')
+      p Age :
+      input(type='number' name='age')
+      button(type='submit') Save
